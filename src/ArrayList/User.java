@@ -1,6 +1,6 @@
 package ArrayList;
-//Example Using List Which contaion Duplicate Record and Maintain Order
-public class User {
+
+public class User implements Comparable<User> {
 	int id;
 	String password;
 	public User() {
@@ -41,6 +41,12 @@ public class User {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	@Override
+	public int compareTo(User o) {
+		// TODO Auto-generated method stub
+		
+		return 0;
 	}
 	
 

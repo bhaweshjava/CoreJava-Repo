@@ -1,6 +1,10 @@
 package ArrayList;
+import java.util.ArrayList;
+import java.util.Collections;
 //Example Using Set Which Can not contaion Duplicate Record and Not Maintain Order
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 public class TestUserHashSet {
@@ -20,9 +24,18 @@ public class TestUserHashSet {
 		userList.add(user3);
 		userList.add(user4);
 		System.out.println(userList);
-		//Itrate Set
+		//Size of  Set
 		System.out.println(userList.size());
-		System.out.println(userList.contains(user1));
+		//Itrate Set All User
+		Iterator<User> userRecord=userList.iterator();
+		while(userRecord.hasNext())
+		{
+			System.out.println(userRecord.next());
+		}
+		//Short User 
+		  List<User> uList = new ArrayList<User>(userList);
+	       
+		Collections.sort((List<User>) uList);
 		
 
 	}

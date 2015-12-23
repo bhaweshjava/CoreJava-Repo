@@ -45,6 +45,8 @@ public class TestUserArrayList {
 	System.out.println("All User List");
 	while(itr2.hasNext())
 	{
+		//ConcurrentModificationException
+		//record1.add("name");
 		System.out.println(itr2.next());
 	}
 		
